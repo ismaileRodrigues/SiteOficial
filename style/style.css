@@ -421,3 +421,8 @@ footer p {
 .redes-sociais a {
   font-size: 1em;
 }
+
+.redes-sociais p {
+
+  display:none;
+}
