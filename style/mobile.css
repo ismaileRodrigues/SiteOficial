@@ -57,8 +57,9 @@
   padding: 10px 20px;
 }
 
-.navbar-items li {
+li a {
   margin-bottom: 10px;
+  font-size: 10px;
 }
 
 .btn {
@@ -171,7 +172,7 @@
 #feedback-container {
 
   width: 100%;
-  height: 250px;
+  height: 55vh;
   background-color: #f579e0;
   margin: auto;
   display: grid;

@@ -20,19 +20,19 @@
 
 
 
-fetch('https://sheetdb.io/api/v1/xo8tzll8jeamf')
-  .then(response => response.json()) // converte a resposta em JSON
-  .then(data => {
-    for (let i = 0; i < data.length; i++) {
+// fetch('https://sheetdb.io/api/v1/xo8tzll8jeamf')
+//   .then(response => response.json()) // converte a resposta em JSON
+//   .then(data => {
+//     for (let i = 0; i < data.length; i++) {
 
-      let feedback = document.querySelector('#feedback-container')
-      let comentarios = document.createElement('div')
-      comentarios.classList.add('depoimento')
-      comentarios.innerHTML = `<h1> ${data[i].nome}</h1> <p>${data[i].comentario}</p>`
-      feedback.appendChild(comentarios)
+//       let feedback = document.querySelector('#feedback-container')
+//       let comentarios = document.createElement('div')
+//       comentarios.classList.add('depoimento')
+//       comentarios.innerHTML = `<h1> ${data[i].nome}</h1> <p>${data[i].comentario}</p>`
+//       feedback.appendChild(comentarios)
 
-    }
-  })
-  .catch(error => console.log('Erro:', error));
+//     }
+//   })
+//   .catch(error => console.log('Erro:', error));
 
 
