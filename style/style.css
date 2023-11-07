@@ -434,6 +434,10 @@ footer p {
   font-size: 1em;
 }
 
+.redes-sociais p {
+  display:none;
+}
+
 
 .tagembed-socialwall {
   width: 90%;
