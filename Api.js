@@ -21,7 +21,7 @@ btnfechar.addEventListener('click', () => {
 
 
 fetch('https://sheetdb.io/api/v1/xo8tzll8jeamf')
-  .then(response => response.json()) // converte a resposta em JSON
+  .then(response => response.json())
   .then(data => {
     for (let i = 0; i < data.length; i++) {
 
