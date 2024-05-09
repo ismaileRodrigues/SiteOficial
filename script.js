@@ -11,7 +11,7 @@ function openDialog() {
 }
 
 
-// Adicione um evento de clique ao documento inteiro
+
 document.addEventListener('click', closeDialog);
 
 
