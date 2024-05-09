@@ -30,19 +30,19 @@ $(document).ready(function () {
 });
 
 
-// let inputs = document.querySelectorAll('input')
-// document.querySelector('form').addEventListener('submit', (event) => {
-//   event.preventDefault();
-//   var data = new FormData(event.target);
-//   fetch('https://sheetdb.io/api/v1/xo8tzll8jeamf', {
-//     method: 'POST',
-//     body: data
-//   }).then(function (response) {
-//     alert('Enviado')
-//     for (let x = 0; x < inputs.length; x++) {
-//       inputs[x].value = ''
+let inputs = document.querySelectorAll('input')
+document.querySelector('form').addEventListener('submit', (event) => {
+  event.preventDefault();
+  var data = new FormData(event.target);
+  fetch('https://sheetdb.io/api/v1/xo8tzll8jeamf', {
+    method: 'POST',
+    body: data
+  }).then(function (response) {
+    alert('Enviado')
+    for (let x = 0; x < inputs.length; x++) {
+      inputs[x].value = ''
 
-//     }
+    }
 
-//   });
-// });
+  });
+});
