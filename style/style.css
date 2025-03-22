@@ -60,26 +60,22 @@ a {
 .btn {
   display: inline-block;
   justify-content: center;
-  align-items: center;
-  width: 150px; /* largura do círculo */
-  height: 150px; /* altura do círculo */
+  padding: 15px 30px;
+  font-size: 1.1rem;
   background-color: rgb(200, 16, 16);
-  border: 10px solid #eee; /* borda para criar o efeito de rosquinha */
-  border-radius: 50%; /* transforma em círculo */
-  color: transparent; /* oculta o texto */
-  position: relative; /* necessário para posicionar pseudo-elementos */
+  color: #eee;
+  border-radius: 5px;
+  transition: 0.5s;
+  animation: blink 1s infinite; /* Adiciona a animação ao botão */
 }
 
-.btn::before {
-  content: ''; /* pseudo-elemento vazio */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50px; /* largura do "buraco" */
-  height: 50px; /* altura do "buraco" */
-  background-color: rgb(200, 16, 16);
-  border-radius: 50%; /* transforma em círculo */
+@keyframes blink {
+  0%, 100% {
+    opacity: 1; /* Totalmente visível */
+  }
+  50% {
+    opacity: 0; /* Invisível no meio da animação */
+  }
 }
 
 
