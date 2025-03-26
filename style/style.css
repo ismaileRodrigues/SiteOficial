@@ -1,3 +1,5 @@
+/* style.css */
+
 /* Estilos Globais */
 * {
   box-sizing: border-box;
@@ -86,38 +88,6 @@ body {
   background-color: rgb(104, 12, 99);
 }
 
-/* Carrossel */
-.carousel {
-  cursor: grab;
-  overflow: hidden;
-}
-
-.inner {
-  display: flex;
-}
-
-.item {
-  min-width: 400px;
-  min-height: 400px;
-  padding: 14px;
-}
-
-.item img {
-  width: 100%;
-  height: 80%;
-  border-radius: 12px;
-  pointer-events: none;
-}
-
-.carouselImage {
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 /* ShowCase */
 .showCase {
   background-image: url('../gallery/surtido.jpeg');
@@ -194,59 +164,28 @@ body {
 #produtos-container {
   width: 80%;
   margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 50px;
 }
 
-.produtos {
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(245, 121, 224);
-  border-radius: 5px;
-  padding: 20px;
-  margin-bottom: 15px;
+.card {
+  border: none;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.card-text {
+  font-size: 1rem;
 }
 
 .produtos img {
-  width: 25vh;
-  height: 25vh;
-  display: flex;
-  margin: auto;
   border-radius: 8px;
 }
 
-.produtos-title {
-  margin-bottom: 10px;
-  font-size: 1.5rem;
-  text-align: center;
-  font-weight: bold;
-}
-
-.produtos p {
-  margin-top: 15px;
-}
-
-/* Dialog */
-dialog {
-  position: fixed;
-  border: none;
-  width: 80%;
-  height: 60%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  overflow: hidden;
-}
-
-dialog iframe {
-  position: fixed;
-  border: none;
-  width: 100%;
-  height: 90%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+/* Feedback */
+#feedback-container .tagembed-container {
+  margin-top: 2rem;
 }
 
 /* Sobre */
@@ -289,33 +228,6 @@ dialog iframe {
 
 .textoSobre p {
   padding: 10px;
-}
-
-/* About Container */
-#abaut-container {
-  width: 90%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 40px;
-  margin-bottom: 5%;
-}
-
-.abaut {
-  display: flex;
-  flex-direction: column;
-  background-color: #f579e0;
-  padding: 25px;
-  border-radius: 5px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.65);
-  margin-bottom: 30px;
-  width: 100%;
-}
-
-.abaut-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center;
 }
 
 /* Galeria */
