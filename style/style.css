@@ -36,7 +36,7 @@ body {
 
 /* Showcase */
 .showCase {
-    background-image: url('../gallery/surtido.jpeg');
+  background-image: url('../gallery/surtido.jpeg');
     height: 70vh;
     background-size: cover;
     background-attachment: fixed;
