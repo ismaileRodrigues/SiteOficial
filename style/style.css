@@ -309,7 +309,7 @@ dialog iframe {
   border-radius: 5px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.65);
   margin-bottom: 30px;
-  width: 80%;
+  width: 100%;
 }
 
 .abaut-title {
@@ -462,20 +462,29 @@ footer p {
     padding: 0.5rem 1.5rem;
   }
 
-  .navbar-nav {
-    text-align: center;
+  .navbar-container {
+    flex-direction: column;
   }
 
-  .navbar-nav .nav-link {
-    padding: 0.5rem 1rem;
+  .navbar-itens {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-itens li {
+    padding: 5px;
   }
 
   .containerSobre .textoSobre p {
     font-size: 1rem;
   }
 
-  #abaut-container .abaut-title {
-    font-size: 1.25rem;
+  #abaut-container {
+    grid-template-columns: 1fr;
+  }
+
+  .abaut {
+    width: 100%;
   }
 
   .galeria .headline {
