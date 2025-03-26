@@ -2,28 +2,27 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
 }
 
 body {
-    background-color: #fac7f0; /* Cor de fundo personalizada */
+    background-color: #fac7f0;
 }
 
 /* Navbar */
 .navbar {
-    background-color: #111; /* Mantém a cor personalizada */
+    background-color: #111;
 }
 
 /* Logo */
 .logo img {
-    width: 150px; /* Tamanho personalizado da logo */
+    width: 150px;
 }
 
 /* Botão personalizado */
 .btn {
     background-color: rgb(200, 16, 16);
     transition: 0.5s;
-    animation: blink 1s infinite; /* Animação personalizada */
+    animation: blink 1s infinite;
 }
 
 @keyframes blink {
@@ -46,15 +45,25 @@ body {
     color: rgb(203, 32, 152);
 }
 
+.title {
+    width: 100%; /* Garante que o título não ultrapasse o contêiner */
+}
+
 .title h1 {
     font-size: 4rem;
     text-shadow: 0 0 20px black;
+    word-wrap: break-word; /* Quebra palavras longas */
+    overflow-wrap: break-word; /* Compatibilidade */
+    max-width: 100%; /* Limita ao contêiner */
 }
 
 .title p {
     font-size: 2rem;
     color: #eee;
     text-shadow: 0 0 20px black;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
 }
 
 /* Produtos */
@@ -74,6 +83,9 @@ body {
 
 .containerSobre h1 {
     color: violet;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
 }
 
 .containerSobre img {
@@ -126,4 +138,24 @@ iframe {
 /* Feedback */
 .tagembed-socialwall {
     background-color: #f579e0;
+}
+
+/* Ajustes gerais para títulos */
+h1, h2, h5 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+}
+
+/* Responsividade para títulos grandes */
+@media (max-width: 768px) {
+    .title h1 {
+        font-size: 2.5rem; /* Reduz em telas menores */
+    }
+    .title p {
+        font-size: 1.5rem;
+    }
+    .containerSobre h1 {
+        font-size: 1.5rem;
+    }
 }
