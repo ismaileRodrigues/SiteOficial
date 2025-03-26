@@ -5,228 +5,225 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="./gallery/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" media="screen and (max-width:800px)" href="./style/mobile.css">
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" media="screen and (max-width:800px)" href="./style/mobile.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <title>DonutsTIA</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="#"><img src="./gallery/logo.png" alt="Logo" class="logo"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="#showcase">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-          <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
-          <li class="nav-item"><a class="nav-link" href="#feedback-container">Depoimentos</a></li>
-          <li class="nav-item"><a class="nav-link" onclick="openDialog()">Cardápio</a></li>
-        </ul>
-      </div>
+  <nav class='navbar'>
+
+
+
+    <div class="navbar-container">
+      <div class="logo"></div>
+      <ul class="navbar-itens">
+        <li><a href="#showcase">Inicio</a> </li>
+        <li><a href="#sobre">Sobre</a> </li>
+        <li><a href="#galeria">Galeria</a> </li>
+        <li><a href="#feedback-container">Depoimentos</a> </li>
+        <li> <a onclick="openDialog()">Cardápio</a> </li>
+
+      </ul>
+
     </div>
+
+    <dialog>
+
+      <iframe src="https://drive.google.com/embeddedfolderview?id=12fWOQ7QZGPp-sqYePC8HkXeuZmpvaiCS"></iframe>
+    </dialog>
   </nav>
 
-  <dialog>
-    <iframe src="https://drive.google.com/embeddedfolderview?id=12fWOQ7QZGPp-sqYePC8HkXeuZmpvaiCS"></iframe>
-  </dialog>
 
-  <header id="showcase" class="showCase text-center">
-    <div class="container">
-      <div class="title">
-        <div class="logo">
-          <img src="./gallery/logo.png" alt="">
-        </div>
-        <h1>Donuts TIA</h1>
-        <p>"Que a nossa doçura seja contagiante"</p>
-        <a class="btn btn-primary" href="https://loja-oline-cliente.vercel.app/" target="_blank"><strong>Loja</strong></a>
+  <header id="showcase" class='showCase'>
+
+    <div class="title">
+      <div class="logo">
+        <img src="./gallery/logo.png" alt="">
       </div>
+      <h1>Donuts TIA</h1>
+      <p>"Que a nossa doçura seja contagiante"</p>
+      <a class="btn"
+        href="https://loja-oline-cliente.vercel.app/"
+        target="_blank"><strong>Loja</strong>
+      </a>
     </div>
+
+
   </header>
 
-  <section id="clients" class="py-5 bg-light text-center">
-    <div class="container">
-      <h2 class="headline">Nossos contatos</h2>
-      <div class="clients-container d-flex justify-content-center">
-        <a href="https://instagram.com/donuts.t.i.a?igshid=YmMyMTA2M2Y=" target="_blank" class="mx-3">
-          <i class="fab fa-instagram fa-2x"></i>
-        </a>
-        <a href="https://www.facebook.com/ArlieneEliasRodriguessilva" target="_blank" class="mx-3">
-          <i class="fab fa-facebook-f fa-2x"></i>
-        </a>
-        <a href="https://api.whatsapp.com/send?phone=5541998642005" target="_blank" class="mx-3">
-          <i class="fab fa-whatsapp fa-2x"></i>
-        </a>
-      </div>
+
+  <section id="clients">
+
+    <div class="headline">Nossos contatos</div>
+    <div class="clients-container">
+
+      <a href="https://instagram.com/donuts.t.i.a?igshid=YmMyMTA2M2Y=" target="_blank">
+
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com/ArlieneEliasRodriguessilva" target="_blank"> <i class="fab fa-facebook-f"></i>
+      </a>
+
+      <a href="https://api.whatsapp.com/send?phone=5541998642005" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+
     </div>
   </section>
 
-  <section id="produtos" class="py-5">
-    <div class="container">
-      <h2 class="headline text-center">O que fazemos</h2>
-      <div class="row" id="produtos-container">
-        <div class="col-md-4 col-sm-6 mb-4">
-          <div class="card h-100">
-            <img src="./gallery/donut-1.PNG" class="card-img-top" alt="donut">
-            <div class="card-body">
-              <h5 class="card-title">Donuts</h5>
-              <p class="card-text">Delicioso Donuts com cobertura de Chocolate branco ou chocolate ao leite, com variedades de recheio, também temos os Donuts especiais com diversos sabores.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 mb-4">
-          <div class="card h-100">
-            <img src="./gallery/alfajor.jpeg" class="card-img-top" alt="alfajor">
-            <div class="card-body">
-              <h5 class="card-title">Alfajor</h5>
-              <p class="card-text">Temos também esse maravilhoso Alfajor feito de pão de Mel com recheio de doce de leite.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 mb-4">
-          <div class="card h-100">
-            <img src="./gallery/pizza.jpg" class="card-img-top" alt="mini pizza">
-            <div class="card-body">
-              <h5 class="card-title">Mini Pizza Congelada</h5>
-              <p class="card-text">Para quem Preferir salgado oferecemos mini pizza congelada 100% artesanal para matar sua fome com apenas 2 minutos no microondas.</p>
-            </div>
-          </div>
-        </div>
+  <section id="produtos">
+    <h1 class="headline">O que fazemos</h1>
+    <div id="produtos-container">
+      <div class="produtos">
+        <span class="produtos-title">Donuts</span>
+        <img src="./gallery/donut-1.PNG" alt="donut" />
+        <p>Delicioso Donuts com cebertura de Chocolate branco ou chocolate ao leite, com variedades de recheio, tambem
+          temos os Donuts especiais com diverços sabores. </p>
+      </div>
+      <div class="produtos">
+        <span class="produtos-title">Alfajor</span>
+        <img src="./gallery/alfajor.jpeg" alt="donut" />
+
+        <p>Temos também esse maravilhoso Alfajor feito de pão de Mel com recheio de doce de leite.</p>
+      </div>
+      <div class="produtos">
+        <span class="produtos-title">Mini Pizza Congelada</span>
+        <img src="./gallery/pizza.jpg" alt="donut" />
+        <p>Para quem Preferir salgado oferecemos mini pizza congelada 100% artesanal para matar sua fome com apenas 2
+          minutos no microodas.</p>
       </div>
     </div>
-  </section>
+    <section id="feedback">
 
-  <section id="feedback" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="headline text-center">Comentários</h2>
-      <a href="https://g.page/r/Cf-dOK2W874cEBM/review" target="_blank" class="btn btn-primary d-block mx-auto mb-4">Deixe seu feedback</a>
+<!--       <h1 class="headlineFeed" >Deixe seu comentário</h1>  -->
+
+<!--      <form class="inputs">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="data[nome]">
+        <label for="cometario">Comentario</label>
+        <textarea id="cometario" cols="20" rows="10" name="data[comentario]">
+
+        </textarea>
+        <input  class="comentario" type="submit" id="enviar" value="Enviar">
+      </form> -->
+
+      <h1 class="headline">Comentários</h1>
+       <a href="https://g.page/r/Cf-dOK2W874cEBM/review" target="_blank" > Deixe seu feedback</a>
       <div id="feedback-container">
+
         <div class="tagembed-container">
           <div class="tagembed-socialwall" data-wall-id="121099"></div>
           <script src="//widget.tagembed.com/embed.min.js" type="text/javascript"></script>
         </div>
+
+      </div>
+
+    </section>
+    <section class="containerSobre" id="sobre">
+      <h1>SOBRE NÓS</h1>
+      <div class="textoSobre">
+        <p>Donuts TIA, uma marca Campolarguense que está no mercado desde 2020. Trabalhamos com DONUTS, cones trufados,
+          alfajor, maçã do amor e alguns itens de chocolate personalizado.</p>
+        <p>Tudo começou quando meu filho nasceu e eu queria estar mais presente na vida dele. Foi aí que Deus nos
+          iluminou
+          com a ideia de começar a fazer Donuts.
+        </p>
+        <p>
+          Inicialmente, compartilhamos com amigos e parentes, e hoje já somos reconhecidos em toda Campo Largo e Região.
+          A
+          ideia original para o nome era T Thomas (filho), I Ismaile (meu esposo) e A Arliene (eu). Como somos uma
+          empresa
+          bastante familiar, gostaríamos de representar essa união em nosso nome.
+        </p>
+        <p>
+          No entanto, ao longo do tempo, passei a ser conhecida como a Tia dos Donuts, o que também achamos bastante
+          legal.
+        </p>
+      </div>
+      <div class="img">
+        <img src="./gallery/donut-1.PNG" alt="" />
+        <img src="./gallery/pacoca.jpg" alt="" />
+        <img src="../gallery/homer.png" alt="" />
+      </div>
+
+      <div id="abaut-container">
+        <div class="abaut">
+          <span class="abaut-title">Missão</span>
+          <p>Nossa missão é fornecer produtos de alta qualidade, feitos 100% artesanal com ingredientes frescos e
+            selecionados, para proporcionar aos clientes momentos de prazer e satisfação. </p>
+        </div>
+        <div class="abaut">
+          <span class="abaut-title">Visão</span>
+          <p>Nossa visão é se tornar-se uma referência no mercado de donuts, expandindo a marca e conquistando novos
+            mercados.</p>
+        </div>
+        <div class="abaut">
+          <span class="abaut-title">Valores</span>
+          <p>Nossos valores incluir o compromisso com a qualidade dos produtos, o respeito aos clientes, a ética nos
+            negócios a responsabilidade social e ambiental.</p>
+        </div>
+      </div>
+
+
+
+
+    </section>
+
+
+    <div class="galeria" id="galeria">
+
+      <h2>Galeria de fotos</h2>
+
+      <div class="fotos">
+
+        <img src="./gallery/1.jpeg">
+        <img src="./gallery/2.jpeg">
+        <img src="./gallery/3.jpeg">
+        <img src="./gallery/4.jpeg">
+        <img src="./gallery/5.jpeg">
+        <img src="./gallery/6.jpeg">
+        <img src="./gallery/7.jpeg">
+        <img src="./gallery/8.jpeg">
+        <img src="./gallery/pacoca.jpg">
+        <img src="./gallery/oreo.jpeg">
+        <img src="./gallery/homer.png">
+        <img src="./gallery/laca.jpeg">
       </div>
     </div>
-  </section>
 
-  <section class="containerSobre py-5" id="sobre">
-    <div class="container">
-      <h2 class="headline text-center">SOBRE NÓS</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <p>Donuts TIA, uma marca Campolarguense que está no mercado desde 2020. Trabalhamos com DONUTS, cones trufados, alfajor, maçã do amor e alguns itens de chocolate personalizado.</p>
-          <p>Tudo começou quando meu filho nasceu e eu queria estar mais presente na vida dele. Foi aí que Deus nos iluminou com a ideia de começar a fazer Donuts.</p>
-          <p>Inicialmente, compartilhamos com amigos e parentes, e hoje já somos reconhecidos em toda Campo Largo e Região. A ideia original para o nome era T Thomas (filho), I Ismaile (meu esposo) e A Arliene (eu). Como somos uma empresa bastante familiar, gostaríamos de representar essa união em nosso nome.</p>
-          <p>No entanto, ao longo do tempo, passei a ser conhecida como a Tia dos Donuts, o que também achamos bastante legal.</p>
-        </div>
-        <div class="col-md-6">
-          <div class="row">
-            <div class="col-6 mb-4">
-              <img src="./gallery/donut-1.PNG" class="img-fluid" alt="">
-            </div>
-            <div class="col-6 mb-4">
-              <img src="./gallery/pacoca.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="col-6 mb-4">
-              <img src="../gallery/homer.png" class="img-fluid" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="abaut-container" class="mt-5">
-        <div class="row">
-          <div class="col-md-4 mb-4">
-            <div class="abaut p-3 bg-white shadow-sm rounded h-100">
-              <h5 class="abaut-title">Missão</h5>
-              <p>Nossa missão é fornecer produtos de alta qualidade, feitos 100% artesanal com ingredientes frescos e selecionados, para proporcionar aos clientes momentos de prazer e satisfação.</p>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="abaut p-3 bg-white shadow-sm rounded h-100">
-              <h5 class="abaut-title">Visão</h5>
-              <p>Nossa visão é se tornar-se uma referência no mercado de donuts, expandindo a marca e conquistando novos mercados.</p>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="abaut p-3 bg-white shadow-sm rounded h-100">
-              <h5 class="abaut-title">Valores</h5>
-              <p>Nossos valores incluir o compromisso com a qualidade dos produtos, o respeito aos clientes, a ética nos negócios a responsabilidade social e ambiental.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <footer id="footer">
 
-  <section class="galeria py-5 bg-light" id="galeria">
-    <div class="container">
-      <h2 class="headline text-center">Galeria de fotos</h2>
-      <div class="row">
-        <div class="col-md-3 col-sm-6 mb-4">
-          <img src="./gallery/1.jpeg" class="img-fluid" alt="">
-        </div>
-        <div class="col-md-3 col-sm-6 mb-4">
-          <img src="./gallery/2.jpeg" class="img-fluid" alt="">
-        </div>
-        <div class="col-md-3 col-sm-6 mb-4">
-          <img src="./gallery/3.jpeg" class="img-fluid" alt="">
-        </div>
-        <div class="col-md-3 col-sm-6 mb-4">
-          <img src="./gallery/4.jpeg" class="img-fluid" alt="">
-        </div>
-        <div class="col-md-3 col-sm-6 mb-4">
-          <img src="./gallery/5.jpeg" class="img-fluid" alt="">
-        </div>
-        <div class="col-md-3 col-sm-6 mb-4">
-          <img src="./gallery/6.jpeg" class="img-fluid" alt="">
-        </div>
-        <div class="col-md-3 col-sm-6 mb-4">
-          <img src="./gallery/7.jpeg" class="img-fluid" alt="">
-        </div>
-        <div class="col-md-3 col-sm-6 mb-4">
-          <img src="./gallery/8.jpeg" class="img-fluid" alt="">
-        </div>
-        <div class="col-md-3 col-sm-6 mb-4">
-          <img src="./gallery/pacoca.jpg" class="img-fluid" alt="">
-        </div>
-        <div class="col-md-3 col-sm-6 mb-4">
-          <img src="./gallery/oreo.jpeg" class="img-fluid" alt="">
-        </div>
-        <div class="col-md-3 col-sm-6 mb-4">
-          <img src="./gallery/homer.png" class="img-fluid" alt="">
-        </div>
-        <div class="col-md-3 col-sm-6 mb-4">
-          <img src="./gallery/laca.jpeg" class="img-fluid" alt="">
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <footer id="footer" class="py-4 bg-dark text-light text-center">
-    <div class="container">
-      <p>&copy;Ismaile Rodrigues-2023</p>
+      <p id="cop">
+        ©Ismaile Rodrigues-2023
+      </p>
       <div class="redes-sociais">
-        <a href="https://instagram.com/donuts.t.i.a?igshid=YmMyMTA2M2Y=" target="_blank" class="mx-2 text-light">
-          <i class="fab fa-instagram fa-2x"></i>
+        <p> ©Ismaile Rodrigues-2023</p>
+        <a href="https://instagram.com/donuts.t.i.a?igshid=YmMyMTA2M2Y=" target="_blank">
+
+          <i class="fab fa-instagram"></i>
         </a>
-        <a href="https://www.facebook.com/ArlieneEliasRodriguessilva" target="_blank" class="mx-2 text-light">
-          <i class="fab fa-facebook-f fa-2x"></i>
+        <a href="https://www.facebook.com/ArlieneEliasRodriguessilva" target="_blank"> <i class="fab fa-facebook-f"></i>
         </a>
-        <a href="https://api.whatsapp.com/send?phone=5541998642005" target="_blank" class="mx-2 text-light">
-          <i class="fab fa-whatsapp fa-2x"></i>
+
+        <a href="https://api.whatsapp.com/send?phone=5541998642005" target="_blank">
+          <i class="fab fa-whatsapp"></i>
         </a>
-        <a href="https://maps.app.goo.gl/xyKs7yXxWsgfV2rS8" target="_blank" class="mx-2 text-light">
-          <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
+        <a href="https://maps.app.goo.gl/xyKs7yXxWsgfV2rS8" target="_blank">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
         </a>
+
       </div>
-    </div>
-  </footer>
 
 
-  <script src="./script.js"></script>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="./script.js"></script>
+<!--     <script src="./Api.js"></script> -->
 </body>
 
 </html>
