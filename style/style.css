@@ -7,7 +7,17 @@
 body {
     background-color: #fac7f0;
 }
-
+:root {
+    --bs-primary: #ff69b4; /* Substitui a cor primária do Bootstrap */
+}
+.btn-custom {
+    background-color: #ff69b4;
+    color: white;
+}
+.navbar {
+    background-color: #pink;
+    padding: 20px;
+}
 /* Navbar */
 .navbar {
     background-color: #111;
@@ -138,6 +148,9 @@ iframe {
 /* Feedback */
 .tagembed-socialwall {
     background-color: #f579e0;
+    width:80%;
+    height:40%;
+    
 }
 
 /* Ajustes gerais para títulos */
