@@ -7,16 +7,23 @@
 body {
     background-color: #fac7f0;
 }
-:root {
-    --bs-primary: #ff69b4; /* Substitui a cor primária do Bootstrap */
+/* Feedback */
+#feedback-container {
+    max-width: 900px; /* Limita a largura para melhor controle */
+    height: 500px; /* Altura fixa conforme solicitado */
+    margin-left: auto; /* Centraliza horizontalmente */
+    margin-right: auto; /* Centraliza horizontalmente */
 }
-.btn-custom {
-    background-color: #ff69b4;
-    color: white;
+
+.tagembed-container {
+    height: 100%; /* Preenche a altura do contêiner pai */
+    width: 100%; /* Preenche a largura do contêiner pai */
 }
-.navbar {
-    background-color: #pink;
-    padding: 20px;
+
+.tagembed-socialwall {
+    background-color: #f579e0; /* Mantém a cor personalizada */
+    height: 100%; /* Garante que o widget use toda a altura */
+    width: 100%; /* Garante que o widget use toda a largura */
 }
 /* Navbar */
 .navbar {
