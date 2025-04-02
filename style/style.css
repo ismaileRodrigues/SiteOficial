@@ -96,4 +96,50 @@ body {
   .navbar-nav {
       text-align: center;
   }
+
+  body.dark-mode .navbar-toggler {
+    
+    border-color: #eeedf0; /* Cor da borda */
+}
+
+body.dark-mode .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(187, 134, 252, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+}
+
+/* Modo escuro */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode .navbar {
+  background-color: #1f1f1f;
+}
+
+body.dark-mode .card {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+body.dark-mode .bg-light {
+  background-color: #1f1f1f !important;
+}
+
+body.dark-mode .bg-dark {
+  background-color: #000000 !important;
+}
+
+body.dark-mode a {
+  color: #ebebeb;
+}
+
+body.dark-mode .btn-outline-primary {
+  border-color: #bb86fc;
+  color: #f0f0f0;
+}
+
+body.dark-mode .btn-outline-primary:hover {
+  background-color: #06023b;
+  color: #f0f0f0;
 }
