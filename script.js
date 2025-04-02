@@ -4,4 +4,4 @@ let dataAtual = new Date()
 
 let ano = dataAtual.getFullYear()
 
-copy.innerHTML = `Todos os direitos reservados  &#x00A9; ${ano}`
+copy.innerHTML = `Todos os direitos reservados © Ismaile Rodrigues - ${ano}`
