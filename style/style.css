@@ -122,6 +122,10 @@ body.dark-mode .card {
   color: #ffffff;
 }
 
+body.dark-mode .nav-item a:hover {
+  color: #bb86fc;
+}
+
 body.dark-mode .bg-light {
   background-color: #1f1f1f !important;
 }
