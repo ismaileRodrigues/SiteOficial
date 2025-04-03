@@ -18,6 +18,7 @@ body {
   margin-right: 10px;
 }
 
+
 .showcase {
   background: url('../gallery/homer.png') no-repeat center /cover; 
   height: 80vh;
@@ -146,4 +147,7 @@ body.dark-mode .btn-outline-primary {
 body.dark-mode .btn-outline-primary:hover {
   background-color: #06023b;
   color: #f0f0f0;
+}
+body.dark-mode a:hover {
+  color: #bb86fc;
 }
