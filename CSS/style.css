@@ -423,6 +423,72 @@ header .container {
     font-size: 0.95rem;
 }
 
+/* Brigadeiros Section */
+.brigadeiros {
+    background-color: var(--white);
+}
+
+.brigadeiros-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--dark-gray);
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.brigadeiros-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.brigadeiro-item {
+    background-color: var(--light-gray);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.brigadeiro-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.brigadeiro-img {
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
+.brigadeiro-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.brigadeiro-item:hover .brigadeiro-img img {
+    transform: scale(1.05);
+}
+
+.brigadeiro-info {
+    padding: 20px;
+}
+
+.brigadeiro-info h3 {
+    font-size: 1.3rem;
+    color: var(--primary-dark);
+    margin-bottom: 10px;
+}
+
+.brigadeiro-info p {
+    color: var(--dark-gray);
+    font-size: 0.95rem;
+}
+
 /* Depoimentos Section */
 .depoimentos {
     background-color: var(--primary-light);
