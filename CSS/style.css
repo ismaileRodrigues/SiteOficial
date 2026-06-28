@@ -815,6 +815,95 @@ footer {
     }
 }
 
+/* Catálogo Section */
+.catalogo {
+    background: linear-gradient(135deg, var(--primary-light) 0%, var(--white) 100%);
+    padding: 80px 0;
+}
+
+.catalogo-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.catalogo-content p {
+    font-size: 1.1rem;
+    color: var(--dark-gray);
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.catalogo-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-download, .btn-view {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 35px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+}
+
+.btn-download {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: 2px solid var(--primary-color);
+}
+
+.btn-download:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(199, 21, 133, 0.3);
+}
+
+.btn-view {
+    background-color: var(--white);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.btn-view:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(199, 21, 133, 0.3);
+}
+
+.btn-download i, .btn-view i {
+    font-size: 1.2rem;
+}
+
+/* Menu Catalog Link */
+.catalog-link {
+    display: inline-block;
+    padding: 8px 16px !important;
+    background-color: var(--primary-color);
+    color: var(--white) !important;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.catalog-link:hover {
+    background-color: var(--primary-dark);
+    transform: scale(1.05);
+}
+
+.catalog-link::after {
+    display: none !important;
+}
+
 @media (max-width: 768px) {
     .menu {
         position: fixed;
@@ -873,5 +962,20 @@ footer {
     
     .footer-content {
         flex-direction: column;
+    }
+    
+    .catalogo-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .btn-download, .btn-view {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .catalog-link {
+        padding: 6px 12px !important;
+        font-size: 0.9rem;
     }
 }
