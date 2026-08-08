@@ -980,23 +980,17 @@ footer {
     }
 }
 
-/* Estilos para as imagens do catálogo */
-.catalogo-images {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+/* Estilos para os grupos do catálogo */
+.catalogo-group {
     margin-bottom: 40px;
-    flex-wrap: wrap;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
-.catalogo-images img {
-    max-width: 400px;
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: var(--shadow);
-    transition: var(--transition);
-}
-
-.catalogo-images img:hover {
-    transform: scale(1.02);
+.catalogo-group h3 {
+    color: var(--primary-dark);
+    margin-bottom: 20px;
+    font-size: 1.5rem;
 }
